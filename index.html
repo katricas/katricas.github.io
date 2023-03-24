@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+    <header>
+      <img class="profile-pic" src="https://randomuser.me/api/portraits/men/21.jpg" alt="Personal CV Picture">
+      <div>
+        <h1 class="nombre">Juan Barrios</h1>
+        <p class="profesion">Front-end Developer</p>
+      </div> 
+    </header>
+
+    <div>
+      <nav id="menu">
+        <ul>
+          <div>
+            <li><button onclick="scrollToSection('experiencia')">Experiencia</button></li>
+          </div>
+          <div>
+            <li><button onclick="scrollToSection('habilidades')">Habilidades</button></li>
+          </div>
+          <div>
+            <li><button onclick="scrollToSection('educacion')">Educación</button></li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+
+    <section>
+      <h2 id="experiencia">Experiencia</h2>
+      <br/>
+      <div class="experiencia">
+        <h3>Web Developer</h3>
+        <p>CompuMundo</p>
+        <p>Enero 2005 - Presente</p>
+        <ul>
+          <li>Desarrollo y mantenimiento de sitios web utilizando HTML, CSS y JavaScript.</li>
+          <li>Colaboración con diseñadores para implementar diseños responsivos.</li>
+          <li>Optimización del rendimiento del sitio web y aplicación de las mejores prácticas de SEO.</li>
+        </ul>
+      </div>
+      <div class="experiencia">
+        <h3>Web Developer</h3>
+        <p>Telecentro</p>
+        <p>Junio 2000 - Diciembre 2004</p>
+        <ul>
+          <li>Asistencia en el desarrollo y mantenimiento de sitios web utilizando HTML, CSS y JavaScript.</li>
+          <li>Implementación de diseños adaptables y optimización del rendimiento del sitio web.</li>
+        </ul>
+      </div>
+    </section>
+    
+    <section>
+      <h2 id="habilidades">Habilidades</h2>
+      <br/>
+      <button id="toggle-skills">Show Skills</button>
+      <ul id="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Git</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 id="educacion">Educacion</h2>
+      <br/>
+      <div class="educacion">
+        <h3>Ingeniero en Sistemas</h3>
+        <p>Universidad Nacional de Tecnologia</p>
+        <p>Graduado en Mayo 1995</p>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

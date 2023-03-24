@@ -1,0 +1,135 @@
+body {
+  margin: 0%;
+  padding: 0 5rem 0 5rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; 
+  padding: 2rem;
+  background-color: #000000a4;
+  color: #ffffff;
+}
+
+.nombre {
+  font-size: 3rem;
+}
+
+.profesion {
+  font-size: 1rem;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+#menu {
+  column-count: 3;
+  column-gap: 2rem;
+  background-color: #82a1cdb8;
+}
+
+nav ul {
+  margin: 1rem 0 1rem 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li{
+  list-style: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+nav ul li button {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 2rem;
+}
+
+section {
+  padding: 2rem;
+}
+
+#experiencia {
+  font-size: 2rem;
+}
+
+.experiencia {
+  margin-bottom: 2rem;
+}
+
+.experiencia h3 {
+  margin-bottom: 0.5rem;
+}
+
+#habilidades {
+  font-size: 2rem;
+}
+
+.skills {
+  margin-bottom: 2rem;
+}
+
+.skills h3 {
+  margin-bottom: 0.5rem;
+}
+
+.skills ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills li {
+  margin-bottom: 0.5rem;
+}
+
+#educacion {
+  font-size: 2rem;
+}
+
+.educacion {
+  margin-bottom: 2rem;
+}
+
+.educacion h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .profile-pic {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+
+  .educacion {
+    grid-column: 1 / span 2;
+  }
+
+  .skills {
+    grid-column: 1 / span 2;
+  }
+}
