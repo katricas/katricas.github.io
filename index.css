@@ -111,6 +111,7 @@ section {
   header {
     flex-direction: row;
     justify-content: flex-start;
+    background-color: #000000a4;
   }
 
   .profile-pic {
